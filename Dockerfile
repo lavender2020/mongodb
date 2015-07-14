@@ -13,7 +13,7 @@ RUN \
 ADD mongodb.conf /etc/mongodb.conf
 
 # Define mountable directories.
-VOLUME ["/data"]
+VOLUME ["/data","/var/log/mongodb/"]
 
 # Define working directory.
 WORKDIR /data
